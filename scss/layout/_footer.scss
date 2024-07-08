@@ -1,0 +1,57 @@
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+footer{
+  background-color:var.$Tint-blue ;
+  .footer-div{
+    @media (max-width:1200px){
+    gap: 20px !important;
+    }
+    @media (max-width:994px){
+    flex-direction: column;
+    }
+  }
+ .footer-left{
+ .p-1{
+  @include mxn.font (Poppins,16px,500,28px,399px);
+color: white;
+opacity: 80%;
+text-align: left;
+  padding-top: 23px !important;
+  padding-bottom: 83px !important;
+ }
+  .foot-yallow{
+    transition: 0.3s;
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: var.$yellow;
+    max-width: 517px;
+    @media (max-width:386px){
+flex-direction: column;
+    }
+&:hover{
+  box-shadow: inset 1px 96px  100px rgb(51, 255, 0) ;
+  
+}
+h6{
+  @include mxn.font(Poppins,18px,500,32px,auto);
+text-align: left;
+}
+  }}
+}
+.footer-right{
+  h1{
+    @include mxn.font (Poppins,48px,600,64px,auto);
+    padding-bottom: 14px;
+    color: white;
+text-align: left;
+  }
+  p{
+    @include mxn.font (Poppins,16px,400,28px,399px);
+    text-align: left;
+    padding-bottom: 24px;
+    opacity: 80%;
+color: white;
+
+  }
+}

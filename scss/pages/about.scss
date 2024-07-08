@@ -1,0 +1,78 @@
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+.head-about{
+@media (max-width:1200px){
+  flex-direction: column;
+  
+}
+
+.about-left{
+  p{
+@include mxn.font(Poppins,18px,400,32px,auto);
+text-align: left;
+  }
+  h1{
+@include mxn.font (Poppins,54px,600,74px,595px);
+text-align: left;
+  }
+  h4{
+    padding-top: 31px;
+    @include mxn.font (Poppins,16px,400,28px,484px);
+text-align: left;
+
+  }
+}
+.about-right{
+img{
+  width: 100%;
+}
+}}
+.gray{
+  @media (max-width:780px){
+flex-direction: column;
+  }
+}
+.gray-bac{
+background-color: 
+rgba(244, 245, 245, 1)
+;
+
+.gray-left{
+h1{
+  @include mxn.font (Poppins,38px,600,56px, auto);
+  //styleName: Heading 3;
+font-family: Poppins;
+font-size: 38px;
+font-weight: 600;
+line-height: 56px;
+text-align: left;
+
+}
+p{
+  @include mxn.font (Poppins,16px,400,28px,515px);
+text-align: left;
+}
+}}
+.teacher{
+  margin-bottom: 128px;
+  background-image: url(../../img/about-img/man-in-blue-jacket-looking-at-white-board-7413916.svg);
+  background-size: cover;
+ width: 100%;
+ height: 340px;
+ background-size: cover;
+background-repeat: no-repeat;
+}
+.team-bac{
+  padding: 128px 0px;
+  background-color: var.$Accent;
+  .imgaa{
+    margin:0 auto;
+    width: 130px;
+    height: 130px;
+  }
+  .team-h1{
+    padding-bottom: 48px;
+    text-align: center;
+  }
+
+}
