@@ -1,0 +1,198 @@
+$primary-color: rgba(28, 30, 83, 1);
+$secondary-color: #28a745;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  &.hadr-bac {
+    background-color: $primary-color;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .navbar-toggler {
+    border-color: $primary-color;
+  }
+  .nav-link {
+    color: #ffffff;
+    &:hover {
+      color: lighten($primary-color, 10%);
+    }
+    &.disabled {
+      color: #6c757d;
+    }
+  }
+  .btn-outline-success {
+    border-color: $secondary-color;
+    color: $secondary-color;
+    &:hover {
+      background-color: $secondary-color;
+      color: #ffffff;
+    }
+  }
+}
+
+header {
+  .container {
+    text-align: center;
+    padding: 50px 0;
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+  .plo {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 1rem;
+  }
+
+ img{
+  margin: 0 auto;
+width: 147.53px;
+height: 16px;
+top: 396px;
+left: 729px;
+gap: 0px;
+opacity: 0px;
+margin-top: 500pxpx;
+ }
+}
+
+
+
+//
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1E1E2D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+
+    nav {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .portfolio-header {
+        text-align: center;
+        margin: 50px 0;
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            color: #777;
+        }
+    }
+
+    .portfolio-filter {
+        text-align: center;
+        margin: 20px 0;
+
+        a {
+            text-decoration: none;
+            color: #1E1E2D;
+            margin: 0 10px;
+        }
+    }
+
+    .portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+        .portfolio-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+
+            img {
+                max-width: 100%;
+            }
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            p {
+                color: #777;
+            }
+
+            a {
+                text-decoration: none;
+                color: #1E1E2D;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #1E1E2D;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .contact-info {
+        margin: 20px 0;
+
+        a {
+            color: white;
+        }
+    }
+
+    div {
+        a {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
